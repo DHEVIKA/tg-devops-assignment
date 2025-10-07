@@ -114,8 +114,5 @@ Copy code
         | S3 / Data  |
         +-----------+
 
-## Output
 
-
-<img width="1606" height="812" alt="Screenshot 2025-10-07 110517" src="https://github.com/user-attachments/assets/df60ccdd-c1db-405a-9286-e51e1aebab1d" />
 
