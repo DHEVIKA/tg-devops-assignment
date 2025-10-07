@@ -113,6 +113,8 @@ Copy code
         +-----+-----+
         | S3 / Data  |
         +-----------+
+### OUTPUT
 
+<img width="1606" height="812" alt="Image" src="https://github.com/user-attachments/assets/028fb081-b3f2-4748-8eca-0cb256b2fe5d" />
 
 
