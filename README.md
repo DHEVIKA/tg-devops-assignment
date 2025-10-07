@@ -2,6 +2,10 @@
 
 Welcome to my DevOps project repository! This project demonstrates end-to-end deployment of a Dockerized application on **AWS EKS** with **Terraform** infrastructure and **CI/CD automation** using GitHub Actions.
 
+
+## MY EC2 INSTANCE
+
+![image alt](https://github.com/user-attachments/assets/06d0ec46-512c-4731-b82e-d0d02626c6a7)
 ---
 
 ## 📂 Project Structure
@@ -14,8 +18,7 @@ k8s/ # Kubernetes manifests
 README.md
 .gitignore
 
-yaml
-Copy code
+
 
 ---
 
@@ -23,12 +26,11 @@ Copy code
 
 ### 1️⃣ Clone the repository
 
-```bash
+
 git clone https://github.com/DHEVIKA/tg-devops-assignment.git
 cd tg-devops-assignment
 2️⃣ Terraform: Provision Infrastructure
-bash
-Copy code
+
 cd infra
 terraform init
 terraform plan
@@ -36,15 +38,13 @@ terraform apply  # confirm with 'yes'
 ⚠️ Ensure AWS credentials are configured: aws configure
 
 3️⃣ Docker: Build & Push Image
-bash
-Copy code
+
 cd ../app
 docker build -t my-app .
 docker tag my-app:latest <docker-username>/my-app:latest
 docker push <docker-username>/my-app:latest
 4️⃣ Kubernetes: Deploy to EKS
-bash
-Copy code
+
 aws eks --region <region> update-kubeconfig --name <cluster-name>
 kubectl apply -f ../k8s/
 kubectl get pods
@@ -84,9 +84,11 @@ Docker images pushed to Docker Hub for simplicity.
 
 CI/CD workflow assumes the main branch is stable and triggers daily.
 
-🖼️ Architecture Diagram (Text-Based)
-pgsql
-Copy code
+
+
+
+🖼️ Architecture Diagram 
+
      +----------------+
      | GitHub Repo    |
      | (Code + CI/CD) |
@@ -113,8 +115,7 @@ Copy code
         +-----+-----+
         | S3 / Data  |
         +-----------+
-### OUTPUT
-
-<img width="1606" height="812" alt="Image" src="https://github.com/user-attachments/assets/028fb081-b3f2-4748-8eca-0cb256b2fe5d" />
 
 
+## OUTPUT
+![image alt](https://github.com/user-attachments/assets/3912e9c6-2121-4cd2-803c-f804911fb828)
